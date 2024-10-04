@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Coca Cola Video Carousel</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -26,23 +29,95 @@
         <div class="wrap-col">
 
             <div class="column-small">
-                <img src="img/kv-hearts.png" alt="">
+                <img class="side-image" src="img/kv-hearts.png" alt="">
+                <img class="side-image2" src="img/fytro.png" alt="">
             </div>
 
             <div class="column-big">
 
 
                 <div class="slikc-carousel">
-                    <div>your content</div>
-                    <div>your content</div>
-                    <div>your content</div>
-                </div>
+                    <div id="0" class="">
 
+                        <div class="slide video" data-index="1">
+                            <div class="story">
+                                        <iframe id="player0" class="video" data-video="8H9j5jHnjQo" data-player="0" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" title="YouTube video player" width="640" height="360" src="https://www.youtube.com/embed/8H9j5jHnjQo?html5=1&amp;playsinline=1&amp;controls=0&amp;modestbranding=0&amp;showinfo=0&amp;enablejsapi=1&amp;rel=0&amp;mute=1&amp;autoplay=1&amp;origin=https%3A%2F%2Fwww.queen.gr&amp;widgetid=1" data-gtm-yt-inspected-9="true"></iframe>
+                                <div type="button" class="sound cursor on">
+                                        <svg class="on" width="60" height="60"><use href="#sound-on"></use></svg>
+                                        <svg class="off" width="60" height="60"><use href="#sound-off"></use></svg>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                    <div id="1" class="start-slide"><div class="wrap-start-btn"><button class="start-btn" id="start-button">Start ></button></div></div>
+
+                    <div id="2" class="">
+
+                        <div class="slide video" data-index="1">
+                            <div class="story">
+                                <a class="inner" href="https://www.queen.gr/mageirikh/peri-orexews/story/278816/oi-akseperastes-stigmes-tis-oikogeneias-mas-oi-kyriakes-gyro-apo-to-trapezi" target="_blank">
+                                        <iframe id="player0" class="video" data-video="8H9j5jHnjQo" data-player="0" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" title="YouTube video player" width="640" height="360" src="https://www.youtube.com/embed/8H9j5jHnjQo?html5=1&amp;playsinline=1&amp;controls=0&amp;modestbranding=0&amp;showinfo=0&amp;enablejsapi=1&amp;rel=0&amp;mute=1&amp;autoplay=1&amp;origin=https%3A%2F%2Fwww.queen.gr&amp;widgetid=1" data-gtm-yt-inspected-9="true"></iframe>
+                                        <img class="image" src="https://img.youtube.com/vi/8H9j5jHnjQo/maxresdefault.jpg" alt="">
+                                </a>
+                                <div type="button" class="sound cursor on">
+                                        <svg class="on" width="60" height="60"><use href="#sound-on"></use></svg>
+                                        <svg class="off" width="60" height="60"><use href="#sound-off"></use></svg>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div id="3" class="">
+
+                        <div class="slide video" data-index="1">
+                            <div class="story">
+                                <a class="inner" href="https://www.queen.gr/mageirikh/peri-orexews/story/278815/oi-stigmes-mas-pou-xtizoun-to-ayrio-mazi-kyriakatiko-magiko-trapezi-me-thea-ta-asteria" target="_blank">
+                                        <iframe id="player0" class="video" data-video="8H9j5jHnjQo" data-player="0" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" title="YouTube video player" width="640" height="360" src="https://www.youtube.com/embed/eSW6WXPrRds?html5=1&playsinline=1&controls=0&modestbranding=0&showinfo=0&enablejsapi=1&rel=0&mute=1&autoplay=1&origin=https%3A%2F%2Fwww.queen.gr&widgetid=2" data-gtm-yt-inspected-9="true"></iframe>
+                                        <img class="image" src="https://img.youtube.com/vi/eSW6WXPrRds/maxresdefault.jpg" alt="">
+                                </a>
+                                <div type="button" class="sound cursor on">
+                                        <svg class="on" width="60" height="60"><use href="#sound-on"></use></svg>
+                                        <svg class="off" width="60" height="60"><use href="#sound-off"></use></svg>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div id="4" class="">
+
+                        <div class="slide video" data-index="1">
+                            <div class="story">
+                                <a class="inner" href="https://www.queen.gr/mageirikh/peri-orexews/story/278816/oi-akseperastes-stigmes-tis-oikogeneias-mas-oi-kyriakes-gyro-apo-to-trapezi" target="_blank">
+                                        <iframe id="player0" class="video" data-video="8H9j5jHnjQo" data-player="0" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" title="YouTube video player" width="640" height="360" src="https://www.youtube.com/embed/8H9j5jHnjQo?html5=1&amp;playsinline=1&amp;controls=0&amp;modestbranding=0&amp;showinfo=0&amp;enablejsapi=1&amp;rel=0&amp;mute=1&amp;autoplay=1&amp;origin=https%3A%2F%2Fwww.queen.gr&amp;widgetid=1" data-gtm-yt-inspected-9="true"></iframe>
+                                        <img class="image" src="https://img.youtube.com/vi/8H9j5jHnjQo/maxresdefault.jpg" alt="">
+                                </a>
+                                <div type="button" class="sound cursor on">
+                                        <svg class="on" width="60" height="60"><use href="#sound-on"></use></svg>
+                                        <svg class="off" width="60" height="60"><use href="#sound-off"></use></svg>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+             
 
             </div>
         </div>
     </div>
 
-<script src="index.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="index.js"></script>
 </body>
 </html>

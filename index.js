@@ -60,3 +60,27 @@ $('.slick-next').on('click', function() {
 $('.slikc-carousel').on('init', function(event, slick) {
   $('.slick-prev').removeClass('visible');
 });
+
+
+
+$(document).on('click', '.sound', function() {
+  const $iframe = $(this).closest('.slide').find('iframe');
+  const videoSrc = $iframe.attr('src');
+
+  // Check if video is muted
+  const isMuted = videoSrc.includes('mute=1');
+  
+  if (isMuted) {
+      // Unmute the video
+      const newSrc = videoSrc.replace('mute=1', 'mute=0');
+      $iframe.attr('src', newSrc);
+      $(this).find('.on').hide();
+      $(this).find('.off').show();
+  } else {
+      // Mute the video
+      const newSrc = videoSrc.replace('mute=0', 'mute=1');
+      $iframe.attr('src', newSrc);
+      $(this).find('.off').hide();
+      $(this).find('.on').show();
+  }
+});

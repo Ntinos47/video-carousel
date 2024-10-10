@@ -20,27 +20,7 @@ $('.slikc-carousel').slick({
   ]
 });
 
-$(document).on('click', '.sound', function() {
-  const $iframe = $(this).closest('.slide').find('iframe');
-  let videoSrc = $iframe.attr('src');
 
-  // Check if video is muted
-  const isMuted = videoSrc.includes('mute=1');
-  
-  if (isMuted) {
-      // Unmute the video
-      const newSrc = videoSrc.replace('mute=1', 'mute=0');
-      $iframe.attr('src', newSrc);
-      $(this).find('.on').hide();
-      $(this).find('.off').show();
-  } else {
-      // Mute the video
-      const newSrc = videoSrc.replace('mute=0', 'mute=1');
-      $iframe.attr('src', newSrc);
-      $(this).find('.off').hide();
-      $(this).find('.on').show();
-  }
-});
 
 
 function toggleImageAndVideo(slide) {
@@ -54,12 +34,22 @@ function toggleImageAndVideo(slide) {
           if (videoSrc && !videoSrc.includes('autoplay=1')) {
               $iframe.attr('src', videoSrc.replace('autoplay=0', 'autoplay=1'));
           }
+        // Unmute the video
+        const newSrc = videoSrc.replace('mute=1', 'mute=0');
+        $iframe.attr('src', newSrc);
+        $(this).find('.on').hide();
+        $(this).find('.off').show();
       } else {
           $image.show();
           const videoSrc = $iframe.attr('src');
           if (videoSrc && videoSrc.includes('autoplay=1')) {
               $iframe.attr('src', videoSrc.replace('autoplay=1', 'autoplay=0'));
           }
+        // Mute the video
+        const newSrc = videoSrc.replace('mute=0', 'mute=1');
+        $iframe.attr('src', newSrc);
+        $(this).find('.off').hide();
+        $(this).find('.on').show();
       }
   }
 }

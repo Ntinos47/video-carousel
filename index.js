@@ -21,8 +21,6 @@ $('.slikc-carousel').slick({
 });
 
 
-
-
 function toggleImageAndVideo(slide) {
   const $iframe = $(slide).find('iframe');
   const $image = $(slide).find('img[data-img="true"]');

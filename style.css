@@ -72,6 +72,11 @@
 .slick-prev {
     position: absolute;
     top: 48%;
+    margin-left: 36%;
+    z-index: 999;
+}
+.slick-next {
+    margin-right: 36.3%;
 }
 
 .slick-prev.visible {

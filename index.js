@@ -1,7 +1,6 @@
 $('.slikc-carousel').slick({
   centerPadding: '60px',
   slidesToShow: 3,
-  draggable: false,
   responsive: [
       {
           breakpoint: 768,
@@ -94,4 +93,14 @@ $(document).on('click', '.sound', function() {
       $(this).find('.off').hide();
       $(this).find('.on').show();
   }
+});
+
+
+const soundIcon = document.getElementById('sound-icon');
+  soundIcon.addEventListener('click', function() {
+    if (soundIcon.src.includes('img/Speaker_Icon.svg')) {
+        soundIcon.src = 'img/Mute_Icon.svg';
+    } else {
+        soundIcon.src = 'img/Speaker_Icon.svg';
+    }
 });

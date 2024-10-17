@@ -77,7 +77,6 @@ $(document).on('click', '.sound', function() {
   const $iframe = $(this).closest('.slide').find('iframe');
   const videoSrc = $iframe.attr('src');
 
-  // Check if video is muted
   const isMuted = videoSrc.includes('mute=1');
   
   if (isMuted) {
@@ -97,10 +96,11 @@ $(document).on('click', '.sound', function() {
 
 
 const soundIcon = document.getElementById('sound-icon');
+
   soundIcon.addEventListener('click', function() {
-    if (soundIcon.src.includes('img/Speaker_Icon.svg')) {
-        soundIcon.src = 'img/Mute_Icon.svg';
-    } else {
-        soundIcon.src = 'img/Speaker_Icon.svg';
-    }
+  if (soundIcon.src.includes('img/Speaker_Icon.svg')) {
+      soundIcon.src = 'img/Mute_Icon.svg';
+  } else {
+      soundIcon.src = 'img/Speaker_Icon.svg';
+  }
 });

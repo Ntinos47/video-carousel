@@ -297,8 +297,9 @@ a {
     z-index: 999;
     width: 50px;
     height: auto;
-    right: -65px;
     cursor: pointer;
+    top: 80%;
+    right: -50px;
 }
 .sp-icon img {
     width: 100%;
